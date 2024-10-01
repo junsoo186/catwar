@@ -1,0 +1,81 @@
+@charset "UTF-8";
+header{
+    width: 100%; 
+    max-width: 1200px; 
+    
+    display: flex;
+    flex-wrap: wrap;   
+    background-color: white; 
+    padding: 10px 0; 
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.logo a{
+		text-decoration: none;
+		color: black;
+}
+.logo{
+	font-size: 30px;
+	font-family: 'PF Stardust';	
+	color: black;
+	margin-bottom: 10px
+
+}
+.logo-start{
+	display: flex;
+	width: 100%
+	
+}
+.gamestart{
+	margin-left:10px;
+	background-color: red;
+	border: solid 3px black;
+	max-width: 160px
+}
+.gamestart a{
+	font-size: 30px;
+	text-decoration: none;
+	font-family: 'PF Stardust';
+	color: black;
+}
+.gamestart:hover {
+	background-color: blue;
+}
+.gamestart a:hover {
+	color: white;
+}
+
+
+.nav-area{
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	justify-content: space-around;
+}
+.nav-area li{
+	border: solid 3px black;
+	height: 30px;
+	width: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+.nav-area li:hover{
+	border: solid 3px black;
+	height: 30px;
+	width: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: yellow;
+	
+}
+.nav-area a{
+	color: black;
+	text-decoration: none;
+	font-family: 'PF Stardust';
+}
+

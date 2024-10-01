@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            background-color: #212121;
+        }
+
+     
+#gameScreen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    max-width: 1680px;
+    max-height: 100vh; 
+    aspect-ratio: 16 / 9; 
+    aspect-ratio: 1680 / 945;
+    background-color: white;
+    border: solid 2px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

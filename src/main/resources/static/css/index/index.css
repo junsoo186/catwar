@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+content{
+	
+    width: 100%; 
+    max-width: 1200px; 
+    display: flex;
+    flex-wrap: wrap;   
+    background-color: white; 
+    padding: 10px 0; 
+    justify-content: center;
+    flex-direction: column;
+    border: solid 3px black;
+    min-height: 800px;
+}

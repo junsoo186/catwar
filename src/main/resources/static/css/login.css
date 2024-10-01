@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+		.text-box{
+		display: flex;
+        
+		}
+        #loginForm {
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+            border: solid 1px black;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        input {
+            margin-bottom: 15px;
+            padding: 10px;
+            font-size: 14px;
+            border: solid 1px #ccc;
+            box-sizing: border-box;
+        }
+
+        button{
+            padding: 10px;
+            border: none;
+            font-size: 14px;
+            cursor: pointer;
+            border: solid 1px #000;
+            font-family: 'PF Stardust', sans-serif;
+        }
+        button:hover {
+        	background-color:yellow;
+			padding: 10px;
+            border: none;
+            font-size: 14px;
+            cursor: pointer;
+            border: solid 1px #000;
+            font-family: 'PF Stardust', sans-serif;
+		}

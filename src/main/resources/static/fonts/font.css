@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'PF Stardust';
+    src: url('PFStardustExtraBold.woff2') format('woff2'),
+        url('PFStardustExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
