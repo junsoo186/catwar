@@ -1,4 +1,5 @@
  function loadNewGame() {
+	
         fetch('/user/newGame')
             .then(response => response.text())
             .then(data => {
@@ -6,3 +7,4 @@
             })
             .catch(error => console.log('Error loading newGame.jsp:', error));
     }
+    

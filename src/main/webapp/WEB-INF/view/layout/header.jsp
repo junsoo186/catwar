@@ -5,8 +5,10 @@
 <head>
 <meta charset="UTF-8">
 <title>catwar</title>
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
 <link rel="stylesheet" href="css/common.css">
 <link rel="stylesheet" href="css/index/header.css">
+<link rel="stylesheet" href="css/index/footer.css">
 <link rel="stylesheet" href="css/index/index.css">
 <link rel="stylesheet" href="fonts/font.css">
 </head>

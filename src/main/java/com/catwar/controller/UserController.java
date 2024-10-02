@@ -67,7 +67,7 @@ public class UserController {
 		return "user/home";
 	}
 	@GetMapping("/newGame")
-	public String getNewGame(Model model) {
+	public String getNewGame(Model model ) {
 		User principal = (User) session.getAttribute("principal");
 		model.addAttribute("principal" ,principal);
 		return  "user/newGame";
@@ -76,10 +76,15 @@ public class UserController {
 	@PostMapping("/newNickName")
 	public String postNewNickName(newNickNameDTO dto,HttpSession session) {
 		User principal = (User) session.getAttribute("principal");
-		
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@"+dto.getNickName());
 		userDetailService.newNickName(principal.getUserId(), dto);
-		return "redirect:/game";
+		return "/main";
 		
 	}
+	@GetMapping("/firstGame")
+	public String getFirstGame() {
+		return "game/firstGame";
+	}
+	
 	
 }

@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 function newNickName(){
 	const nickName = document.getElementById("nickName").value;
 	
@@ -12,9 +10,14 @@ function newNickName(){
             'Content-Type': 'application/x-www-form-urlencoded'  
         },
         body: data	
+        
 	})
-	.then(resposne=>{
+	.then(response =>{
+		nextStage = true;
 		window.location.href = response.url;
+        
+		
 	})
 	
 }
+

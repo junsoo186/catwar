@@ -1,0 +1,18 @@
+@charset "UTF-8";
+footer{
+	display:flex;
+	margin-top:10px;
+	border: solid 3px black;
+	
+	width: 100%;
+	margin-bottom: 0px;
+	justify-content: center;
+	align-items:center;
+	color:white;
+	background-color: gray;
+	flex-direction: column;
+	
+}
+b{
+	margin-bottom: 10px;
+}

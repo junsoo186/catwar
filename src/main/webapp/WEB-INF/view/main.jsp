@@ -19,6 +19,7 @@
 <script type="text/javascript" src="/js/gameMain.js"></script>
 <script type="text/javascript" src="/js/login.js" defer></script>
 <script type="text/javascript" src="/js/home.js" defer></script>
+<script type="text/javascript" src="/js/newGame.js" defer></script>
  
 </body>
 </html>
