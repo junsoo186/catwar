@@ -2,7 +2,6 @@ function login() {
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
 
-    // URL 인코딩된 데이터로 변환
     const data = `email=${encodeURIComponent(email)}&password=${encodeURIComponent(password)}`;
 
     fetch('user/login', {

@@ -16,7 +16,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.SessionAttribute;
 
 import com.catwar.dto.LoginDTO;
+import com.catwar.dto.gameDTO.newNickNameDTO;
 import com.catwar.repository.model.User;
+import com.catwar.service.UserDetailService;
 import com.catwar.service.UserService;
 
 import jakarta.servlet.http.HttpSession;
@@ -28,6 +30,7 @@ import lombok.RequiredArgsConstructor;
 public class UserController {
 	private final HttpSession session;
 	private final UserService userService;
+	private final UserDetailService userDetailService;
 	
 	
 	@GetMapping("/login")
@@ -36,18 +39,17 @@ public class UserController {
 	}
 	
 	
-	
 	  @PostMapping("/login")
 	    public String login(LoginDTO dto, HttpSession session) {
-	        // 로그인 처리 로직
-	        User principal = userService.login(dto);  // LoginDTO에서 이메일과 비밀번호 받아서 처리
+	       
+	        User principal = userService.login(dto);  
 
 	        if (principal != null) {
-	            // 로그인 성공 시 세션에 사용자 정보 저장
+	            
 	            session.setAttribute("principal", principal);
-	            return "redirect:/game";  // 메인 페이지로 리다이렉트
+	            return "redirect:/game";  
 	        } else {
-	            // 로그인 실패 시 로그인 페이지로 리다이렉트
+	           
 	            return "redirect:/game";  
 	        }
 	    }
@@ -71,5 +73,13 @@ public class UserController {
 		return  "user/newGame";
 	}
 	
+	@PostMapping("/newNickName")
+	public String postNewNickName(newNickNameDTO dto,HttpSession session) {
+		User principal = (User) session.getAttribute("principal");
+		
+		userDetailService.newNickName(principal.getUserId(), dto);
+		return "redirect:/game";
+		
+	}
 	
 }

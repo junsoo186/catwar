@@ -13,6 +13,7 @@
 		<h2>"${principal.name}"님 환영합니다.</h2>
 	</div>
 	<div class="home-navarea">
+	<img  src="/images/background/musclecat.gif">
 	<nav class="nav-boxing">
 		<ul class="home-nav">
 			<a onclick="loadNewGame()"><li>새게임<li></a> 
@@ -21,6 +22,7 @@
 			<a href="/user/logout"><li>로그아웃<li></a>
 		</ul>
 	</nav>
+	<img  src="/images/background/musclecat.gif">
 	</div>
 	</content>
 </body>

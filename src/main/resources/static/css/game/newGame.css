@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'PF Stardust', sans-serif;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 30px
+}
+input{
+	font-family: 'PF Stardust', sans-serif;
+	outline: none;
+	border: none;
+	border-bottom: solid 2px black;
+	font-size: 30px
+}
+
+.new:hover{
+	background-color:red;
+}
