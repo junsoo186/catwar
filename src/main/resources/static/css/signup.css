@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+.signup-area{
+	display: flex;
+	border: solid 2px black;
+	flex-direction: column;
+	
+}

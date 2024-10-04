@@ -1,19 +1,21 @@
 @charset "UTF-8";
-
+	
 		.text-box{
 		display: flex;
         
 		}
-        #loginForm {
+        .loginform {
             display: flex;
             flex-direction: column;
             width: 500px;
             border: solid 1px black;
             padding: 20px;
             box-sizing: border-box;
+            
         }
 
         input {
+        	outline: none;
             margin-bottom: 15px;
             padding: 10px;
             font-size: 14px;
@@ -37,4 +39,12 @@
             cursor: pointer;
             border: solid 1px #000;
             font-family: 'PF Stardust', sans-serif;
+		}
+		.signUp{
+		
+		margin-top: 10px;
+		}
+		.signUp-box:hover{
+		cursor:pointer;
+		background-color:yellow;
 		}

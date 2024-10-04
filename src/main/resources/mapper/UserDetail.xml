@@ -7,5 +7,6 @@
 		insert into user_detail_tb (user_id,nick_name)
 		values(#{userId}, #{nickName});
 	</insert>
-
+	
+	
 </mapper>

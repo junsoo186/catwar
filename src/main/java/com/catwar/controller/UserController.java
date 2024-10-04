@@ -1,19 +1,10 @@
 package com.catwar.controller;
 
-import java.util.HashMap;
-import java.util.Map;
-
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.SessionAttribute;
 
 import com.catwar.dto.LoginDTO;
 import com.catwar.dto.gameDTO.newNickNameDTO;
@@ -53,6 +44,11 @@ public class UserController {
 	            return "redirect:/game";  
 	        }
 	    }
+	  
+	  @GetMapping("/signUp")
+	  public String signUp() {
+		  return"user/signUp";
+	  }
 	@GetMapping("/logout")
 	public String getlogout() {
 		session.invalidate();
@@ -74,11 +70,10 @@ public class UserController {
 	}
 	
 	@PostMapping("/newNickName")
-	public String postNewNickName(newNickNameDTO dto,HttpSession session) {
+	public String postNewNickName(newNickNameDTO dto,HttpSession session, Model model) {
 		User principal = (User) session.getAttribute("principal");
-		System.out.println("@@@@@@@@@@@@@@@@@@@@@@"+dto.getNickName());
 		userDetailService.newNickName(principal.getUserId(), dto);
-		return "/main";
+		return "game/firstGame";
 		
 	}
 	@GetMapping("/firstGame")

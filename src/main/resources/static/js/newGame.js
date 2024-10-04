@@ -1,23 +1,27 @@
 
-function newNickName(){
+function newNickName() {
 	const nickName = document.getElementById("nickName").value;
-	
+
 	const data = `nickName=${encodeURIComponent(nickName)}`
-	
-	fetch('user/newNickName',{
+
+	fetch('user/newNickName', {
 		method: 'POST',
-        headers: {
-            'Content-Type': 'application/x-www-form-urlencoded'  
-        },
-        body: data	
-        
+		headers: {
+			'Content-Type': 'application/x-www-form-urlencoded'
+		},
+		body: data
+
 	})
-	.then(response =>{
-		nextStage = true;
-		window.location.href = response.url;
-        
-		
-	})
-	
+		.then(response => {
+			if (!response.ok) {
+				throw new Error('Network response was not ok');
+			}
+			return response.text(); // HTML 텍스트를 반환
+		})
+		.then(html => {
+			nextStage = true;
+			document.getElementById('gameScreen').innerHTML = html;
+		})
+
 }
 

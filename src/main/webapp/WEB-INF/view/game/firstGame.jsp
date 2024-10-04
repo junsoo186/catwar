@@ -8,5 +8,7 @@
 </head>
 <body>
  호출완
+ <p>${test}</p>
+ ${principal.name}
 </body>
 </html>
