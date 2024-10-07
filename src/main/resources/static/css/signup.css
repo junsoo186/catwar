@@ -4,5 +4,30 @@
 	display: flex;
 	border: solid 2px black;
 	flex-direction: column;
-	
+	padding: 15px;
+}
+.signup-area input{
+		outline: none;
+        margin-bottom: 15px;
+        padding: 10px;
+        font-size: 14px;
+        border: solid 1px #ccc;
+        box-sizing: border-box;
+        font-family: 'PF Stardust', sans-serif;
+}
+.signup-area label {
+	margin-top:15px;
+}
+.btn-signUp{
+	display:flex;
+	margin-top:10px;
+	font-family: 'PF Stardust', sans-serif;
+	border: solid 2px black;
+	padding: 10px;
+	justify-content: center;
+}
+
+.btn-signUp:hover {
+	background-color: yellow;
+	cursor: pointer;
 }

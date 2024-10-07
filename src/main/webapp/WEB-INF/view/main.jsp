@@ -21,6 +21,5 @@
 <script type="text/javascript" src="/js/signUp.js" defer></script>
 <script type="text/javascript" src="/js/home.js" defer></script>
 <script type="text/javascript" src="/js/newGame.js" defer></script>
- 
 </body>
 </html>

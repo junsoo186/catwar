@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+content{
+	display: flex;
+	flex-direction: column;
+
+}
+.text-box{
+	border: solid 2px purple;
+	border-radius: 5px;
+	width: 100%
+}

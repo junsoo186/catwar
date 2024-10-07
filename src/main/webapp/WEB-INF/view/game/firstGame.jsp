@@ -5,10 +5,14 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/game/firstGame.css">
+<link rel="stylesheet" href="fonts/font.css">
 </head>
 <body>
- 호출완
- <p>${test}</p>
- ${principal.name}
+<content>
+ <img  src="/images/newGame/ocat.png">
+  <div class="text-box">${userDetail.nickName}</div>
 </body>
+</content>
 </html>

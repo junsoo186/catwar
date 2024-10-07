@@ -6,17 +6,22 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <link rel="stylesheet" href="css/signup.css">
+<link rel="stylesheet" href="css/common.css">
 <link rel="stylesheet" href="fonts/font.css">
 </head>
 <body>
  	<div class=signup-area>
- 	<label for="name">이름</label>
-    <input type="name" id="name" required>
- 	<label for="email">이메일:</label>
-    <input type="email" id="email" required>
-    <label for="password">비밀번호:</label>
-    <input type="password" id="password" required>
-    
+ 	<h1>회원가입</h1>
+ 	<div>
+    	<input type="name" id="name" required placeholder="이름">
+    </div>
+    <div>	
+    	<input type="email" id="email" required placeholder="이메일">
+    </div>
+    <div>	
+	    <input type="password" id="password" required placeholder="비밀번호">
+	</div>
+ 	<div onclick="userSignUp()" class="btn-signUp">가입</div>
  	</div>
 </body>
 </html>

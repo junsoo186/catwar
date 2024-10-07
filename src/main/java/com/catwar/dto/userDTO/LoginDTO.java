@@ -1,4 +1,4 @@
-package com.catwar.dto;
+package com.catwar.dto.userDTO;
 
 import java.sql.Timestamp;
 

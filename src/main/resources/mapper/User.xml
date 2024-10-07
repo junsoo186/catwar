@@ -9,5 +9,9 @@
         WHERE email = #{email}
         AND password = #{password}
     </select>
+    <insert id="joinUser">
+    	INSERT INTO user_tb (email, password, name)
+        VALUES (#{email}, #{password}, #{name})
+    </insert>
     
 </mapper>

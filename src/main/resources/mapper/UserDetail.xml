@@ -7,6 +7,11 @@
 		insert into user_detail_tb (user_id,nick_name)
 		values(#{userId}, #{nickName});
 	</insert>
-	
+	   <select id="selectByUserIdAndDetailId" parameterType="map" resultType="com.catwar.repository.model.UserDetail">
+        SELECT *
+        FROM user_detail_tb
+        WHERE user_id = #{userId}
+        AND detail_id = #{detailId}
+    </select>
 	
 </mapper>
