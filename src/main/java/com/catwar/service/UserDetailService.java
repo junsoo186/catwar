@@ -15,11 +15,11 @@ public class UserDetailService {
 	
 	private final UserDetailRepository detailRepository;
 	
-	public int newNickName(Integer userId, newNickNameDTO dto) {
-		int result = 0;
+	public Integer newNickName(Integer userId, newNickNameDTO dto) {
+		
 		dto.setUserId(userId);
-		result = detailRepository.insertNewNickName(dto);
-		return result;	
+		detailRepository.insertNewNickName(dto);
+		return dto.getDetailId();	
 	}
 	
 	/**

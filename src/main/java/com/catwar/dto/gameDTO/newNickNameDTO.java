@@ -16,6 +16,7 @@ import lombok.ToString;
 @ToString
 @Builder
 public class newNickNameDTO {
+	private Integer	detailId;
 	private Integer userId;
 	private String nickName;
 

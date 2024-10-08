@@ -11,8 +11,10 @@
 </head>
 <body>
 <content>
- <img  src="/images/newGame/ocat.png">
+	<div>
+ 		<img  src="/images/newGame/ocat.png">
+	</div>
   <div class="text-box">${userDetail.nickName}</div>
-</body>
 </content>
+</body>
 </html>

@@ -91,6 +91,7 @@ public class UserController {
 		session.setAttribute("detailId", detailId);
 		UserDetail userDetail = userDetailService.findDetailById(principal.getUserId(), detailId);
 		model.addAttribute("userDetail", userDetail);
+		
 		return "game/firstGame";
 
 	}

@@ -1,12 +1,24 @@
 @charset "UTF-8";
 
 content{
+	align-items:center;
 	display: flex;
 	flex-direction: column;
+	width: 100%;
+	height:100%;
+	margin: 15px;
+	justify-content: flex-end;
 
 }
 .text-box{
-	border: solid 2px purple;
-	border-radius: 5px;
-	width: 100%
+	
+	display:flex;
+	border: solid 5px rgb(165, 89, 221);
+	font-size:25px;
+	border-radius: 30px;
+	width: 50%;
+	min-height: 200px;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 15px;
 }
